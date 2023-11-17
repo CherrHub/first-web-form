@@ -12,42 +12,42 @@
 <body>
     <h1>CP's First Web Form</h1>
 
-    <form method="GET" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
         <fieldset>
             <legend>Name Information:</legend>
             <div class="fname">
                 <label for="fname">First Name:</label>
-                <input name="fname" id="fname" type="text" tabindex="0" placeholder="First Name" />
+                <input name="fname" id="fname" type="text" tabindex="1" placeholder="First Name" required/>
             </div>
             <br>
             <div class="lname">
                 <label for="lname">Last Name:</label>
-                <input name="lname" id="lname" type="text" tabindex="1" placeholder="Last Name" />
+                <input name="lname" id="lname" type="text" tabindex="2" placeholder="Last Name" required/>
             </div>
         </fieldset>
         <fieldset>
             <legend>Contact Information:</legend>
             <div class="email">
                 <label for="email">Email:</label>
-                <input name="email" id="email" type="email" tabindex="2" placeholder="Email" />
+                <input name="email" id="email" type="email" tabindex="3" placeholder="Email" required/>
             </div>
             <br>
             <div class="phone">
                 <label for="phone">Phone:</label>
-                <input name="phone" id="phone" type="tel" tabindex="3" placeholder="Phone" />
+                <input name="phone" id="phone" type="tel" tabindex="4" placeholder="Phone" required/>
             </div>
         </fieldset>
         <fieldset>
             <legend>Birthday:</legend>
             <div class="bdate">
                 <label for="bdate">Birthdate:</label>
-                <input name="bdate" id="bdate" type="date" min="2000" max="2030" tabindex="4" />
+                <input name="bdate" id="bdate" type="date" min="2000" max="2030" tabindex="5" required/>
             </div>
         </fieldset>
         <br>
         <fieldset>
             <div class="submit">
-                <input type="submit" tabindex="5" />
+                <input type="submit" value="Submit" tabindex="6" />
             </div>
         </fieldset>
     </form>
