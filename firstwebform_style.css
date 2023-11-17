@@ -57,15 +57,16 @@ input {
     font-weight: bolder;
 }
 
-.fname >input, .lname >input {
+.fname>input,
+.lname>input {
     margin-left: -26px;
 }
 
-.email > input {
+.email>input {
     margin-left: 6px;
 }
 
-.submit > input {
+.submit>input {
     width: 80%;
 }
 
